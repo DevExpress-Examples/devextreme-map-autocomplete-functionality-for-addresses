@@ -1,0 +1,32 @@
+.demo-container {
+    margin: 50px;
+    width: 90vw;
+}
+
+#pac-input.controls {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#type-selector.controls {
+    background-color: lightseagreen;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#type-selector.controls label {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+    color: white;
+}
+
+#type-selector.controls input[type="radio"] {
+    margin-right: 5px;
+}

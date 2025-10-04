@@ -9,13 +9,13 @@
 
 This example demonstrates how to use Google Maps API to create autocomplete functionality for addresses. Refer to the following Google articles to learn more: <a href="https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete">Place Autocomplete</a> and <a href="https://developers.google.com/maps/documentation/javascript/places-autocomplete"> Places Library</a>.
 
-<div align="center"><img alt="Map for DevExtreme - How to use Google Maps API to create autocomplete functionality for addresses" src="google-maps-api-to-create-autocomplete-functionality-for-addresses.png" /></div>
+<div align="center"><img alt="Map for DevExtreme - How to use Google Maps API to create autocomplete functionality for addresses" src="images/google-maps-api-to-create-autocomplete-functionality-for-addresses.png" /></div>
 
 ## Files to Review
 
 - **jQuery**
-    - [index.html](jQuery/index.html)
-    - [script.js](jQuery/script.js)
+    - [index.html](jQuery/src/index.html)
+    - [index.js](jQuery/src/index.js)
 
 ## Documentation
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DevExtreme Map with Autocomplete for Addresses</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../node_modules/devextreme-dist/css/dx.material.blue.light.compact.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="../node_modules/devextreme-dist/js/dx.all.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY&libraries=places"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+
+  <body class="dx-viewport">
+    <div class="demo-container">
+      <input id="pac-input" class="controls" type="text" placeholder="Enter a location" />
+      <div id="type-selector" class="controls">
+        <input type="radio" name="type" id="changetype-all" checked="checked" />
+        <label for="changetype-all">All</label>
+
+        <input type="radio" name="type" id="changetype-establishment" />
+        <label for="changetype-establishment">Establishments</label>
+
+        <input type="radio" name="type" id="changetype-address" />
+        <label for="changetype-address">Addresses</label>
+
+        <input type="radio" name="type" id="changetype-geocode" />
+        <label for="changetype-geocode">Geocodes</label>
+      </div>
+      <div id="map"></div>
+    </div>
+  </body>
+</html>
