@@ -31,7 +31,7 @@ This example illustrates an approach described in the <a href="https://www.devex
 
 - [Map - How to use Google Maps Marker Clusterer API to create and manage per-zoom-level clusters for a large number of markers](https://www.devexpress.com/Support/Center/p/T310385) 
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-map-autocomplete-functionality-for-addresses&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-map-autocomplete-functionality-for-addresses&~~~was_helpful=no)
 
