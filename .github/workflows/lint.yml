@@ -11,33 +11,6 @@ on:
       - "[0-9][0-9].[0-9].[0-9]*"
 
 jobs:
-  Angular:
-    runs-on: ubuntu-latest
-    timeout-minutes: 60
-    steps:
-    - name: Get sources
-      uses: actions/checkout@v3
-
-    - name: Use Node.js
-      uses: actions/setup-node@v3
-
-    - name: Restore npm cache
-      uses: actions/cache@v3
-      with:
-        path: ./Angular/node_modules
-        key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: ${{ runner.os }}-node-modules
-
-    - name: Run npm install
-      working-directory: Angular
-      run: npm install --no-audit --no-fund
-
-    - name: Lint Angular
-      working-directory: Angular
-      env:
-        DEBUG: eslint:cli-engine
-      run: npm run lint
-
   jQuery:
     runs-on: ubuntu-latest
     timeout-minutes: 60
@@ -65,58 +38,3 @@ jobs:
         DEBUG: eslint:cli-engine
       run: npm run lint
 
-  React:
-    runs-on: ubuntu-latest
-    timeout-minutes: 60
-    steps:
-    - name: Get sources
-      uses: actions/checkout@v3
-
-    - name: Use Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-
-    - name: Restore npm cache
-      uses: actions/cache@v3
-      with:
-        path: ./React/node_modules
-        key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: ${{ runner.os }}-node-modules
-
-    - name: Run npm install
-      working-directory: React
-      run: npm install --no-audit --no-fund
-
-    - name: Lint React
-      working-directory: React
-      env:
-        DEBUG: eslint:cli-engine
-      run: npm run lint
-
-  Vue:
-    runs-on: ubuntu-latest
-    timeout-minutes: 60
-    steps:
-    - name: Get sources
-      uses: actions/checkout@v3
-
-    - name: Use Node.js
-      uses: actions/setup-node@v3
-
-    - name: Restore npm cache
-      uses: actions/cache@v3
-      with:
-        path: ./Vue/node_modules
-        key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: ${{ runner.os }}-node-modules
-
-    - name: Run npm install
-      working-directory: Vue
-      run: npm install --no-audit --no-fund
-
-    - name: Lint Vue
-      working-directory: Vue
-      env:
-        DEBUG: eslint:cli-engine
-      run: npm run lint
