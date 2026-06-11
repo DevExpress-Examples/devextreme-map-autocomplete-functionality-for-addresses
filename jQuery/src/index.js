@@ -32,7 +32,6 @@ $(() => {
         const place = autocomplete.getPlace();
 
         if (!place.geometry) {
-          // eslint-disable-next-line no-alert
           window.alert("Autocomplete's returned place contains no geometry");
           return;
         }
